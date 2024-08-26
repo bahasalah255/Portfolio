@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Navbar Brand</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="#" class="logo">Baha SalahEddine</a>
+            <div class="navbar" id="navbar">
+                <a href="#home" class="navbar-item"><i class="fa fa-home"></i> <strong>Home</strong></a>
+                <a href="#about-us" class="navbar-item"><i class="fa fa-info-circle"></i> <strong>About</strong></a>
+                <a href="#services" class="navbar-item"><i class="fa fa-cogs"></i><strong>Services</strong></a>
+                <a href="#project" class="navbar-item"><i class="fa fa-folder-open"></i> <strong>Projects</strong></a>
+                <a href="#contact" class="navbar-item"><i class="fa fa-envelope"></i> <strong>Contact</strong></a>
+            </div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        
+        <div class="home-content">
+           <h1> <div id="autoTypeElement"></div></h1>
+            <h3>Back-end Dev</h3>
+            <p>A back-end developer focuses on the server-side of web development. This role involves creating, maintaining, and optimizing the logic, database interactions, and server-side infrastructure that powers web applications. Here's a detailed description:</p>
+            <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <div class="about-us-content">
+            <img src="about-me.png" alt="About Us" class="about-us-image">
+            <div class="about-us-text">
+                <h1><i class="fas fa-user"></i> About Us</h1>
+                <p>Hello! I’m SalahEddine, a passionate web developer dedicated to crafting engaging and efficient digital experiences. With a background in both design and development, I bring a unique blend of creativity and technical expertise to every project.</p>
+                <p>I specialize in Full-Stack Development, with a focus on [specific technologies or languages, e.g., React, Node.js, PHP, etc.]. My expertise extends to building responsive and user-friendly websites, optimizing performance, and ensuring cross-browser compatibility. Whether it's creating dynamic web applications or enhancing existing platforms, I’m committed to delivering high-quality results that meet and exceed client expectations.</p>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h1> <i class="fa fa-cogs"></i> My Services</h1>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and interactive websites using modern technologies.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces with a focus on aesthetics and usability.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Creating mobile apps that provide a seamless experience across devices.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3>Back-End Development</h3>
+                    <p>Developing robust server-side logic, databases, and APIs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+    
+</style>
+</head>
+<body>
+    <div class="project-view" id="project">
+        <div class="project-video">
+            <video controls id="projectVideo" class="video-element">
+                <source src="tt.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-changer">
+                <button onclick="changeVideo(-1)">&#10094;</button>
+                <button onclick="changeVideo(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="project-info">
+            <h2>Website Outillage</h2>
+            <p>I developed a comprehensive website for an "outillage" (tools and equipment) company, focusing on creating a user-friendly interface and an engaging user experience. The project was built using HTML, CSS, and JavaScript.</p>
+            <div class="btn-box">
+                <a href="https://www.eqchefchaouni.com/">View Project</a>
+                <a href="https://github.com/bahasalah255/tets">GitHub Repo</a>
+            </div>
+        </div>
+    </div>
+    
+   
+<style>
+
+.contact-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    place-items: center;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+        .contact-image {
+            flex: 1;
+            background-image: url("1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contact-form {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus, 
+        .contact-form textarea:focus {
+            border-color: #007BFF;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-image {
+                height: 200px;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            .contact-form h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Contact Me</h1>
+    <div class="contact-container" id="contact">
+        
+        <div class="contact-image"></div>
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <style>
+            footer {
+  background-color: #003cff;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.socials a:hover {
+  color: #3498db;
+}
+
+        </style>
+        <div class="footer-content">
+          <h3><i class="fas fa-code"></i> Baha Salaheddine</h3>
+          <p>Thank you for visiting my portfolio. Feel free to reach out through any of the channels below!</p>
+          <ul class="socials">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bahasalah255"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://instagram.com/baha_salah90"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Salaheddine Baha. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+
+</html>
+
+   
+</html>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

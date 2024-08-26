@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins' , 'sans-serif';
+
+}
+body {
+    background-color: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #003cff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex; /* Ensure the navbar items are aligned in a row */
+}
+
+.navbar-item {
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #003cff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+}
+.home-content {
+    max-width:600px;
+
+   
+}
+
+.home-content h1 {
+    font-size: 46px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #003cff; /* Cursor effect */
+    animation: blink-caret 0.75s step-end infinite;
+    color: #003cff;
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00abf0; }
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003cff
+}
+.home-content p {
+    font-size: 16px;
+}
+.home-content .btn-box {
+    display: flex;
+    width: 345px;
+    height: 50px;
+    justify-content: space-between;
+
+
+}
+.home-logo {
+    justify-content: end;
+    text-align: left;
+    position: absolute;
+    left: 50px; /* Adjust the distance from the left side */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-logo img {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-box a {
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #003cff;
+    border: 2px solid #003cff;
+    border-radius: 8px;
+    font-size: 19px;
+    color:#081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #003cff;
+}
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  
+}
+
+.about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-us-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.about-us-text {
+    flex: 1;
+}
+
+.about-us-text h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.about-us-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+.services {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #003cff;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+/* Add these styles for the scroll animation */
+[data-scroll] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-scroll].scroll-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    
+}
+.project-view {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-video {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.video-element {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: opacity 1s ease;
+}
+
+.video-changer {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.video-changer button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.video-changer button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.project-info {
+    padding: 30px;
+    text-align: center;
+}
+
+.project-info h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.project-info p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-box a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-box a:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .project-video {
+        height: 300px;
+    }
+
+    .video-element {
+        height: 300px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h2 {
+        font-size: 24px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+}
